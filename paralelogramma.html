@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Paralelogramma</title>
+ <meta http-equiv="Content-Language" content="hu" />
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<style>
+body {
+  background-image: url('img/pic2.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+<h1><font size="20" ><b>Dworák Bence honlapja </b></font></h1>
+<h2><font> amely bemutatja az Infomatika MC 2.ZH feladatainak megoldását</font></h2>
+<br/><br/>
+
+<h3>A paralelogramma területének számítása oldalával és magasságával:</h3>
+<form onsubmit="Script1.js">
+<label for="al">A paralelogramma oldala:</label>
+<input id="al" name="al" type="number" />
+<br/><br/>
+<label for="m">A hozzá tartozó magasság:</label>
+<input id="m" name="m" type="number" />
+<br/><br/>
+<input type="button" value="Számoljunk!"
+onclick='document.getElementById("out1").innerHTML = "A paralelogramma területe oldalával és magasságával:  " + ter()  '/>
+<script src="script/Script1.js"></script>
+</form>
+<br><br>
+<div id="out1"></div>
+
+<br/><br/>
+
+<h3>A paralelogramma területének számítása két oldalával és a köztük lévő szöggel:</h3>
+<form onsubmit="Script2.js">
+<label for="a">A paralelogramma egyik oldala:</label>
+<input id="a" name="a" type="number" />
+<br/><br/>
+<label for="b">A paralelogramma másik oldala:</label>
+<input id="b" name="b" type="number" />
+<br/><br/>
+<label for="gm">A közrezárt szög (rad-ban):</label>
+<input id="gm" name="gm" type="number" />
+<br/><br/>
+<input type="button" value="Számoljunk!"
+onclick='document.getElementById("out2").innerHTML = "A paralelogramma területe két oldalával és köztük lévő szöggel:  " + ter2()  '/>
+<script src="script/Script2.js"></script>
+</form>
+<br><br>
+<div id="out2"></div>
+
+<br/>
+
+<div id="fejlec2">
+<a href="index.html"
+title="Ugrás a nyitóoldalra"
+target="_blank"><font color=#000000>Nyitóoldal</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="paralelogramma.html"
+title="Paralelogramma területe"
+target="_blank"><font color=#000000>Paralelogramma területének számítása</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="termekek1.html"
+title="Valasztas"
+target="_blank"><font color=#000000>Véletlenszerű termékválasztás</font></a><br/><br/><br/>
+<a href="termekek2.html"
+title="Termék ár statisztika"
+target="_blank"><font color=#000000>Termék ár statisztika</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="erdekesseg.html"
+title="Érdekesség"
+target="_blank"><font color=#000000>Érdekesség</font></a>
+</div>
+
+</body>
+</html>

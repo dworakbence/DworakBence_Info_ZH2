@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+ <title>Termékek statisztikája</title>
+ <meta http-equiv="Content-Language" content="hu" />
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+<style>
+body {
+  background-image: url('img/pic4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+
+<h1><font size="20" ><b>Dworák Bence honlapja </b></font></h1>
+<h2><font> amely bemutatja az Infomatika MC 2.ZH feladatainak megoldását</font></h2>
+<br/><br/>
+
+<h3>Termékek nevét és árát add meg, hogy ajánlhassuk a legolcsóbbat!</h3><br/>
+<form onsubmit="Script4.js">
+<label for="a">Első termék:</label>
+<input id="a" name="a" type="text" />
+<label for="a">Első termék ára:</label>
+<input id="a2" name="a2" type="number" />
+<br/><br/><br/>
+<label for="a">Második termék:</label>
+<input id="b" name="b" type="text" />
+<label for="a">Második termék ára:</label>
+<input id="b2" name="b2" type="number" />
+<br/><br/><br/>
+<label for="a">Harmadik termék:</label>
+<input id="c" name="c" type="text" />
+<label for="a">Harmadik termék ára:</label>
+<input id="c2" name="c2" type="number" />
+<br/><br/><br/>
+<label for="a">Negyedik termék:</label>
+<input id="d" name="d" type="text" />
+<label for="a">Negyedik termék ára:</label>
+<input id="d2" name="d2" type="number" />
+<br/><br/><br/>
+<label for="a">Ötödik termék:</label>
+<input id="e" name="e" type="text" />
+<label for="a">Ötödik termék ára:</label>
+<input id="e2" name="e2" type="number" />
+<br/><br/><br/>
+<label for="a">Hatodik termék:</label>
+<input id="f" name="f" type="text" />
+<label for="a">Hatodik termék:</label>
+<input id="f2" name="f2" type="number" />
+<br/><br/>
+<input type="button" value="Kattints az ajánlathoz!"
+onclick='document.getElementById("out2").innerHTML = "A termékek árának átlaga:  " + stat()[0] + "<br>" + "A termékek árának szórása:  " + stat()[1] + "<br>" + "A legolcsóbb termék: " + stat()[2]'/>
+<script src="script/Script4.js"></script>
+</form>
+<br><br>
+<div id="out2"></div>
+
+
+<div id="fejlec2">
+<a href="index.html"
+title="Ugrás a nyitóoldalra"
+target="_blank"><font color=#000000>Nyitóoldal</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="paralelogramma.html"
+title="Paralelogramma területe"
+target="_blank"><font color=#000000>Paralelogramma területének számítása</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="termekek1.html"
+title="Valasztas"
+target="_blank"><font color=#000000>Véletlenszerű termékválasztás</font></a><br/><br/><br/>
+<a href="termekek2.html"
+title="Termék ár statisztika"
+target="_blank"><font color=#000000>Termék ár statisztika</font></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="erdekesseg.html"
+title="Érdekesség"
+target="_blank"><font color=#000000>Érdekesség</font></a>
+</div>
+
+</body>
+</html>
